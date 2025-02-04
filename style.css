@@ -1,0 +1,43 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: grey solid 1px;
+}
+
+.navbar-container div {
+    color: black;
+    border: 1px solid rgba(65, 48, 48, 0.767);
+    justify-content: space-around;
+    font-size: medium;
+    padding: 0.5%;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid grey;
+    height: 70%;
+}
+
+.product-container {
+    border: 1px solid grey;
+    height: 200px;
+    width: 250px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: grey solid 1px;
+}
+
+.footer-container div {
+    color: black;
+    border: 1px solid rgba(65, 48, 48, 0.767);
+    justify-content: space-around;
+    font-size: medium;
+    padding: 0.5%;
+}
