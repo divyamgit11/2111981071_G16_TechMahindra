@@ -1,0 +1,118 @@
+body h1 {
+    font-family: "Poppins",serif;
+    font-weight: 700;
+    color:  hsl(192, 100%, 9%)
+}
+
+body p {
+    font-family: "Open Sans",serif;
+    color:  hsl(192, 100%, 9%);
+}
+
+
+/* Navbar styles*/
+
+navbar {
+    display: flex;
+    margin: 80px 50px;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 240px;
+    height: 50px;
+}
+
+#navbar-cta-btn {
+    padding: 10px 30px;
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+/*Hero Section*/
+
+hero {
+    display: block;
+    text-align: center;
+    margin: 200px 150px 20px;
+}
+
+hero p {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+hero h1 {
+    font-size: 48px;
+}
+
+.cta {
+    padding: 28px 80px;
+    background-color:  hsl(322, 100%, 66%);
+    color:  hsl(207, 100%, 98%);
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+/* stats styling*/
+
+stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+
+stats h1 {
+    font-size: 72px;
+    margin: 0;
+}
+
+stats img {
+    margin: 0;
+}
+
+stats p {
+    margin: 0
+}
+
+
+/*Features*/
+
+
+
+.feature-container {
+    display: flex;
+    margin: 300px 80px;
+    h1 {
+        font-size: 48px;
+        margin: 10px 0;
+    }
+    p {
+        margin: 0;
+        font-size: 20px;
+    }
+}
+
+.feature-container img {
+    width: 500px
+}
+
+.feature-desc {
+    margin: auto auto;
+}
+
+/*cta*/
+
+cta {
+    text-align: center;
+    display: block;
+}
+
+/*footer*/
+
