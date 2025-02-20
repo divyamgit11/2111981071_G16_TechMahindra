@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function memoizedFibonacci(){
+            var cache = [0,1]; //array as a cache, to store fibonacci series
+
+            // function to calculate the nth Fibonnaci term
+            return function calculateNthFibonnaci(n){
+                // if the term already exists return it
+                
+                if (cache[n] !== undefined){
+                    return cache[n];
+                }
+
+                //else start computing with the last terms present in cache
+                cache[n] = calculateNthFibonnaci(n-1) + calculateNthFibonnaci(n-2);
+                return cache[n];
+            };
+        }
+
+        const fib = memoizedFibonacci();
+
+        // Measure execution time
+        function measureTime(n) {
+            const start = performance.now();
+            const result = fib(n);
+            const end = performance.now();
+            console.log(`Fib(${n}) = ${result}, Time: ${(end - start).toFixed(4)} ms`);
+        }
+
+        measureTime(1000); // First time calculation, slower
+        measureTime(1050); // Faster, uses cached values
+        measureTime(1060); // Even faster
+    </script>
+</body>
+</html>

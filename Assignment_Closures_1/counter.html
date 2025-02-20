@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures Assignment</title>
+</head>
+<body>
+    <script>
+        function createCounter(){
+            var count = 0;
+            this.increment = function (){
+                count++;
+            }
+            this.decrement = function (){
+                count--;
+            }
+            this.getCount = function (){
+                return count;
+            }
+        }
+
+        var MyCounter = new createCounter();
+        MyCounter.decrement(); // -1
+        console.log(MyCounter.getCount());
+        MyCounter.increment(); // 0
+        console.log(MyCounter.getCount());
+        MyCounter.increment(); // 1
+        console.log(MyCounter.getCount());
+        MyCounter.increment() // 2
+        console.log(MyCounter.getCount());
+    </script>
+</body>
+</html>
